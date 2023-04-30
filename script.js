@@ -1,3 +1,6 @@
+let drawcolor="black";
+const grid=document.querySelector("#grid");
+const gridvalue=document.querySelector("#gridnumber")
 function creategrid(size){
     const plane=document.querySelector('#plane');
     plane.textContent="";
@@ -13,7 +16,6 @@ function creategrid(size){
     }
     draw()
 }
-let drawcolor="black";
 let colorinput=document.querySelector("#setcolor");
 colorinput.addEventListener("change",()=>{
         drawcolor=colorinput.value;
@@ -30,11 +32,17 @@ function setrandomcolor(){
         box.addEventListener('mouseover',()=>{box.style.backgroundColor=randomcolor();})
     });
 }
+function newgrid2(){
+    gridvalue.textContent=grid.value
+    creategrid(grid.value)
+}
 function newgrid(){
     let size;
     do{
         size=parseInt(prompt("Set a number of squares"));
-    }while (size>100 || size<1)
+    }while (size>100 || size<1 || isNaN(size))
+    gridvalue.textContent=size
+    grid.value=size
     creategrid(size)
 }
 function randomcolor(){
@@ -46,7 +54,7 @@ function randomcolor(){
 }
 function shading(){
     if(i>0){
-        i=parseInt(i-4)  
+        i=parseInt(i-2)  
     }
     let shaded="rgb("+(i)+","+(i)+","+(i)+")";
     return shaded
@@ -65,10 +73,10 @@ function erase(){
     });
 }
 
-function clear(){
+function clean(){
     const boxes=document.querySelectorAll('.box')
     boxes.forEach(box => {
-        console.log('box.style=" "');
+        box.style.backgroundColor="white";
     });
 }
 creategrid(16);

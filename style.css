@@ -1,0 +1,99 @@
+html{
+    background-color: #05BFDB;
+    background: rgb(0,63,112);
+    background: linear-gradient(270deg, rgba(0,63,112,1) 0%, rgba(50,145,164,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    color:#00FFCA;
+    font-size: 40px;
+}
+#container{
+    display: flex;
+    width:100%;
+
+}
+#menu{
+    width:20%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 100px;
+    font-size: 20px;
+}
+#menu> *{
+    margin-bottom: 20px;
+    
+}
+#content{
+    width:80%;
+    height:700px;
+    display: flex;
+    justify-content: start;
+}
+#plane{
+    width:640px;
+    height:640px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.row{
+    display: flex;
+    height: auto;
+    flex: 1 1 auto;
+}
+.box{
+    flex: 1 1 auto;
+}
+button{
+    background-color: #0A4D68;
+    border: 0;
+    border-radius: 40px;
+    width: 100px;
+    height: 40px;
+    color:#44DBD1;
+}
+button:hover{
+    transform: scale(1.05);
+}
+button:visited{
+    background-color: aqua;
+}
+input[type=color]{
+    background-color: transparent;
+    padding: 0;
+    height: 50px;
+    width:50px;
+    border:none;
+}
+input[type=color]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+  }
+  
+input[type=color]::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+input:hover{
+    transform: scale(1.05);
+}
+span{
+    font-weight: bold;
+    font-size: 20px;
+    color:#44DBD1
+}
+#footer{
+    font-weight: bold;
+    text-align: center;
+}
+a{
+    color:#05BFDB
+}
