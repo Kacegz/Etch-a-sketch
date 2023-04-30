@@ -4,10 +4,11 @@ html{
     background: linear-gradient(270deg, rgba(0,63,112,1) 0%, rgba(50,145,164,1) 100%);
     display: flex;
     justify-content: center;
+    font-family: 'Courgette', cursive;
 }
 h1{
     text-align: center;
-    color:#00FFCA;
+    color:#20ABF7;
     font-size: 40px;
 }
 #container{
@@ -27,7 +28,6 @@ h1{
 }
 #menu> *{
     margin-bottom: 20px;
-    
 }
 #content{
     width:80%;
@@ -57,12 +57,13 @@ button{
     width: 100px;
     height: 40px;
     color:#44DBD1;
+    font-family: 'Courgette', cursive;
 }
 button:hover{
     transform: scale(1.05);
 }
-button:visited{
-    background-color: aqua;
+button:active{
+    transform: translateY(1px);
 }
 input[type=color]{
     background-color: transparent;
@@ -75,8 +76,7 @@ input[type=color]::-webkit-color-swatch {
     border: none;
     border-radius: 50%;
     padding: 0;
-  }
-  
+}
 input[type=color]::-webkit-color-swatch-wrapper {
     border: none;
     border-radius: 50%;
@@ -88,7 +88,7 @@ input:hover{
 span{
     font-weight: bold;
     font-size: 20px;
-    color:#44DBD1
+    color:#00FFCA;
 }
 #footer{
     font-weight: bold;
